@@ -94,10 +94,10 @@ class Signup extends Component {
 			alignSelf: "center",
 			backgroundColor: "#EBEBEB",
 			borderRadius: "50px",
-			width: "20vh",
-			height: "60px",
+			width: "28vh",
 			maxWidth: "200px",
-			maxHeight: "150px",
+			maxHeight: "250px",
+			height: "60px",
 			marginBottom: "20px",
 		};
 
@@ -106,7 +106,7 @@ class Signup extends Component {
 			alignSelf: "center",
 			backgroundColor: "#EBEBEB",
 			borderRadius: "50px",
-			width: "28vh",
+			width: "45vh",
 			height: "60px",
 			maxWidth: "500px",
 			maxHeight: "160px",

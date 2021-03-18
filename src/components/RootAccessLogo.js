@@ -1,12 +1,12 @@
 import React, { Component } from "react";
 import { Container } from "reactstrap";
-import rootlogo from "./styles/images/root-access-1.png";
+import rootlogo from "../assets/images/root-access-1.png";
 
 class RootLogo extends Component {
 	render() {
 		return (
 			<Container className="container">
-				<div className="col justify-content-md-center align-items-center">
+				<div className="col justify-content-md-center">
 					<div className="row-1"></div>
 					<div className="row-4 justify-content-md-center text-center">
 						<h1
