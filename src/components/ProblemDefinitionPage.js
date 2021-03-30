@@ -13,6 +13,7 @@ import {
 	Input,
 	FormText,
 } from "reactstrap";
+import ProblemService from "../components/services/ProblemService";
 
 function CodeEditor() {
 	const [code, setCode] = React.useState(
@@ -43,6 +44,25 @@ function CodeEditor() {
 }
 
 class ProblemDefinitionPage extends Component {
+
+	constructor(props) {
+		super(props);
+		this.state = {
+			problems: []
+		}
+	};
+
+	componentDidMount() {
+		ProblemService.getProblem()
+			.then((response) => {
+			console.log(response.data);
+			this.setState({
+                problems: response.data
+			})
+			// .catch(error => console.log(error));
+		});
+	}
+
 	render() {
 		const pTitle = "Problem Title";
 		const pAuthor = "Author";
@@ -72,7 +92,17 @@ class ProblemDefinitionPage extends Component {
             marginTop: "10px"
         }
 		return (
-            <Container>
+			<Container>
+				
+				<div>
+				{this.state.problems.map((problem) => (
+							<p key={problem.id}>
+								<p key={problem.id}>{ problem.id }</p>
+								<p key={problem.firstName}>{ problem.title }</p>
+							</p>
+                        ))}
+				</div>
+
 				<h1>{pTitle}</h1>
 				<h3 align="right">
 					{" -"}

@@ -11,6 +11,7 @@ import Dashboard from "./components/Dashboard";
 import Leaderboard from "./components/Leaderboard";
 import Discussion from "./components/Discussion";
 import Vishwas from "./components/Faculty";
+import ProblemList from "./components/ProblemList";
 
 class App extends Component {
 	render() {
@@ -45,6 +46,11 @@ class App extends Component {
 								path="/leaderboard"
 								exact
 								component={Leaderboard}
+							/>
+							<Route
+								path="/problemlist"
+								exact
+								component={ProblemList}
 							/>
 							<Route
 								path="/discussion"

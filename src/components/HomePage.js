@@ -9,10 +9,7 @@ const Navigation = (props) => {
 
 	const navbarstyle = {
 		fontSize: "30px",
-		width: "100%",
-		marginTop: "0px",
-		marginLeft: "0px",
-		marginRight: "0px",
+		width: "210vh",
 	};
 
 	return (
