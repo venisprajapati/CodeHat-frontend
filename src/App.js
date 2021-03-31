@@ -10,7 +10,7 @@ import AddNewProblem from "./components/AddNewProblem";
 import Dashboard from "./components/Dashboard";
 import Leaderboard from "./components/Leaderboard";
 import Discussion from "./components/Discussion";
-import Vishwas from "./components/Faculty";
+import Faculty from "./components/Faculty";
 import ProblemList from "./components/ProblemList";
 
 class App extends Component {
@@ -57,7 +57,7 @@ class App extends Component {
 								exact
 								component={Discussion}
 							/>
-							<Route path="/faculty" exact component={Vishwas} />
+							<Route path="/faculty" exact component={Faculty} />
 						</Switch>
 					</Nav>
 				</div>

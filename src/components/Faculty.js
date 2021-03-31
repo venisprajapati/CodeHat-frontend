@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import { Link } from "react-router-dom";
 
-class Vishwas extends Component {
+class Faculty extends Component {
 	state = {
 		classes: ["CRNS 6IT1", "Adv Java 6IT", "CRNS 6IT2", "Java 4IT2"],
 	};
@@ -62,4 +62,4 @@ const ClassCard = (props) => {
 		</>
 	);
 };
-export default Vishwas;
+export default Faculty;
