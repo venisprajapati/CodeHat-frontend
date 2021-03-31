@@ -2,7 +2,9 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Image, Container, Row, Col, Form, Button, Carousel, Card } from 'react-bootstrap';
 import '../styles1.css';
-
+import one from '../images/one.jpg'
+import two from '../images/two.jpg'
+import three from '../images/three.jpg'
 
 class MainPage extends Component {
 
@@ -76,8 +78,9 @@ class MainPage extends Component {
                                 <Card style={{ width: '22rem' }}>
                                     <Card.Img
                                         variant="top"
-                                        src='https://mdbootstrap.com/img/Photos/Others/images/43.jpg'
+                                        src={one}
                                         alt='Image'
+                                        height="250 " width="250"
                                     />
                                     <Card.Body>
                                         <Card.Title>Card Title</Card.Title>
@@ -95,8 +98,9 @@ class MainPage extends Component {
                                 <Card style={{ width: '22rem' }}>
                                     <Card.Img
                                         variant="top"
-                                        src='https://mdbootstrap.com/img/Photos/Others/images/43.jpg'
+                                        src={two}
                                         alt='Image'
+                                        height="250 " width="250"
                                     />
                                     <Card.Body>
                                         <Card.Title>Card Title</Card.Title>
@@ -114,8 +118,9 @@ class MainPage extends Component {
                                 <Card style={{ width: '22rem' }}>
                                     <Card.Img
                                         variant="top"
-                                        src='https://mdbootstrap.com/img/Photos/Others/images/43.jpg'
+                                        src={three}
                                         alt='Image'
+                                        height="250 " width="250"
                                     />
                                     <Card.Body>
                                         <Card.Title>Card Title</Card.Title>
