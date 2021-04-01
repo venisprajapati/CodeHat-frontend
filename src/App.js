@@ -9,9 +9,9 @@ import ProblemDefinitionPage from "./components/ProblemDefinitionPage";
 import AddNewProblem from "./components/AddNewProblem";
 import Dashboard from "./components/Dashboard";
 import Leaderboard from "./components/Leaderboard";
-import Discussion from "./components/Discussion";
 import Faculty from "./components/Faculty";
 import ProblemList from "./components/ProblemList";
+import MainProblemPage from "./components/MainProblemPage";
 
 class App extends Component {
 	render() {
@@ -22,7 +22,7 @@ class App extends Component {
 						<Switch>
 							<Route path="/" exact component={HomePage} />
 							<Route
-								path="/problemdefinition"
+								path="/problemdepage"
 								exact
 								component={ProblemDefinitionPage}
 							/>
@@ -53,9 +53,9 @@ class App extends Component {
 								component={ProblemList}
 							/>
 							<Route
-								path="/discussion"
+								path="/problempage"
 								exact
-								component={Discussion}
+								component={MainProblemPage}
 							/>
 							<Route path="/faculty" exact component={Faculty} />
 						</Switch>

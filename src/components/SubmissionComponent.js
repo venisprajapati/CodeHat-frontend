@@ -1,43 +1,10 @@
 import React from 'react';
-import { Navbar } from 'react-bootstrap';
 import {BrowserRouter as Router, Link, Route} from 'react-router-dom';
 import { ProgressBar } from 'react-bootstrap';
 
-function ProblemPage(props) {
+function SubmissionComponent(props) {
     return (
         <div className="main-panel">
-            <div>
-                <nav aria-label="breadcrumb">
-                    <ol class="breadcrumb">
-                        <li class="breadcrumb-item"><a href="#">Home</a></li>
-                        <li class="breadcrumb-item"><a href="#">Library</a></li>
-                        <li class="breadcrumb-item active" aria-current="page">Data</li>
-                    </ol>
-                </nav>
-            </div>
-
-            <div className="container float-left">
-                <h1 className="font-weight-strong">Problem Title</h1>
-            </div>
-    
-            <div class="container pl-5">
-                <table border = "1" >
-                    <tr>
-                        <td>
-                            <Link><h2 className="font-weight-light pl-5 pr-5">Problem</h2></Link>
-                        </td>
-                        <td>
-                            <Link><h2 className="font-weight-light pl-5 pr-5">Submissions</h2></Link>
-                        </td>
-                        <td>
-                            <Link><h2 className="font-weight-light pl-5 pr-5">Discussion</h2></Link>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-            <br></br>
-            <br></br>
-            
             <div className="container sm-12 pl-5">
                 <h4 className="font-weight-light">You have not submitted any solutions</h4>
             </div>
@@ -96,4 +63,4 @@ function ProblemPage(props) {
     )
 }
 
-export default ProblemPage;
+export default SubmissionComponent;

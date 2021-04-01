@@ -1,4 +1,4 @@
-import React, { Component, useState } from "react";
+import React, { Component } from "react";
 import { Container } from "reactstrap";
 import Editor from "react-simple-code-editor";
 import { highlight, languages } from "prismjs/components/prism-core";
@@ -64,8 +64,6 @@ class ProblemDefinitionPage extends Component {
 	}
 
 	render() {
-		const pTitle = "Problem Title";
-		const pAuthor = "Author";
 		const pDefinition =
 			"Problem Definition xxxxxxxxxxxxxxxxx xxxxxxxxxxxxx xxxxxxxxx xxxxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxx xxxxxxxxxxxxxxxxxx";
 
@@ -103,11 +101,6 @@ class ProblemDefinitionPage extends Component {
                         ))}
 				</div>
 
-				<h1>{pTitle}</h1>
-				<h3 align="right">
-					{" -"}
-					{pAuthor}
-				</h3>
 				<div style={pDescriptionStyle} align="left">
 					{pDefinition}
 				</div>
