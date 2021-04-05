@@ -57,7 +57,7 @@ class App extends Component {
 								exact
 								component={Discussion}
 							/>
-							<Route path="/faculty" exact component={Faculty} />
+							<Route path="/faculty1" exact component={Faculty} />
 						</Switch>
 					</Nav>
 				</div>

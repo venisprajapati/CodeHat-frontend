@@ -1,0 +1,67 @@
+.header {
+    text-align:center;
+    background: rgb(255, 253, 253);
+    color: rgb(17, 15, 15);
+    font-size: 30px;
+    font-family:'Trebuchet MS', sans-serif;
+    margin-bottom: 5px;
+    margin-top: 10px;
+  }
+  
+ul.breadcrumb {
+    padding-top:0px;
+    padding: 10px 16px;
+    list-style: none;
+    background-color: #eee;
+    width: fit-content;
+    margin-top: 0px;
+  }
+   ul.breadcrumb li a:hover {
+    color: #01447e;
+    text-decoration: underline;
+  }
+  .button {
+    background-color: #0ba6ff; /* Green */
+    border: none;
+    color: white;
+    padding: 5px;
+    text-align: center;
+    font-size: 16px;
+    border-radius: 4px;
+  }
+  .button2:hover {
+    box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24),0 17px 50px 0 rgba(0,0,0,0.19);
+  }
+  
+  .cardnew {
+    background:#e8e8e8;
+    box-shadow:0 0 10px rgba(0,0,0,.5);
+    padding: 10px;
+    margin-bottom: 2%;
+    color: black;
+    height: 200px;
+    
+  }
+  
+  .cardheadernew {
+    background-color:#bbbfca;
+    border-bottom: 3px solid #eee;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+    font-size:24px;
+    line-height: 1.5;
+    text-transform: uppercase;
+    font-weight: bold;
+    color: black;
+  }
+  .grid-container {
+    display: grid;
+    grid-column-gap: 30px;
+    grid-template-columns: auto auto auto auto;
+    margin-bottom: 20px;
+    margin-left: ;
+    
+ 
+
+  }
+ 
