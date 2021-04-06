@@ -49,9 +49,9 @@ const ClassCard = (props) => {
 						<div class="cardnew">
 							<div class="cardheadernew">{props.className}</div>
 							<div class="cardbodynew">
-								<h6 >
+								<h6>
 									Lorem ipsum dolor sit amet, magna aliqua.
-							</h6>
+								</h6>
 							</div>
 						</div>
 					</div>

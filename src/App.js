@@ -8,9 +8,9 @@ import HomePage from "./components/HomePage";
 import ProblemDefinitionPage from "./components/ProblemDefinitionPage";
 import AddNewProblem from "./components/AddNewProblem";
 import Dashboard from "./components/Dashboard";
-import Leaderboard from "./components/Leaderboard";
+import Leaderboard1 from "./components/Leaderboard1";
 import Discussion from "./components/Discussion";
-import Faculty from "./components/Faculty";
+import Faculty1 from "./components/Faculty1";
 import ProblemList from "./components/ProblemList";
 
 class App extends Component {
@@ -43,9 +43,9 @@ class App extends Component {
 								component={Dashboard}
 							/>
 							<Route
-								path="/leaderboard"
+								path="/leaderboard1"
 								exact
-								component={Leaderboard}
+								component={Leaderboard1}
 							/>
 							<Route
 								path="/problemlist"
@@ -57,7 +57,10 @@ class App extends Component {
 								exact
 								component={Discussion}
 							/>
-							<Route path="/faculty1" exact component={Faculty} />
+							<Route 
+								path="/faculty1"
+								exact
+								component={Faculty1} />
 						</Switch>
 					</Nav>
 				</div>
