@@ -6,7 +6,7 @@ import one from '../images/one.jpg'
 import two from '../images/two.jpg'
 import three from '../images/three.jpg'
 
-class MainPage extends Component {
+class Mainpage extends Component {
 
     constructor(props) {
         super(props)
@@ -17,16 +17,19 @@ class MainPage extends Component {
     }
     
     render() {
+
+        const containerWidth = {
+            width:'1000px',            
+        }
+
         return (
-            <div className="trying">
-                <Container>
+                <Container style={containerWidth}>
                     <Row className='carousel'>
                         <Col className='col-md-12'>
                             <Carousel>
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        id="cimg"
                                         src={require('../images/4.jpg').default}
                                         alt="First slide"
                                         height="650" width="650"
@@ -38,8 +41,7 @@ class MainPage extends Component {
                                 </Carousel.Item>
                                 <Carousel.Item>
                                     <img
-                                        className="d-block w-100"
-                                        id="cimg"
+                                        className="d-block w-100"                                        
                                         src={require('../images/5.jpg').default}
                                         alt="Second slide"
                                         height="650" width="650"
@@ -53,7 +55,6 @@ class MainPage extends Component {
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        id="cimg"
                                         src={require('../images/6.jpg').default}
                                         alt="Third slide"
                                         height="650" width="650"
@@ -177,11 +178,9 @@ class MainPage extends Component {
                             </Col>
                         </Row>
                     </Form>
-                </Container>
-                
-            </div>
+                </Container>            
         )
     }
 }
 
-export default MainPage
+export default Mainpage

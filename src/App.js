@@ -7,11 +7,12 @@ import { Nav } from "reactstrap";
 import HomePage from "./components/HomePage";
 import ProblemDefinitionPage from "./components/ProblemDefinitionPage";
 import AddNewProblem from "./components/AddNewProblem";
-import Dashboard from "./components/Dashboard";
+import Dashboard1 from "./components/Dashboard1";
 import Leaderboard1 from "./components/Leaderboard1";
 import Discussion from "./components/Discussion";
 import Faculty1 from "./components/Faculty1";
 import ProblemList from "./components/ProblemList";
+import Mainpage from './components/Mainpage';
 
 class App extends Component {
 	render() {
@@ -27,6 +28,11 @@ class App extends Component {
 								component={ProblemDefinitionPage}
 							/>
 							<Route
+								path="/mainpage"
+								exact
+								component={Mainpage}
+							/>
+							<Route
 								path="/addnewproblem"
 								exact
 								component={AddNewProblem}
@@ -38,9 +44,9 @@ class App extends Component {
 								component={MainSignup}
 							/>
 							<Route
-								path="/dashboard"
+								path="/dashboard1"
 								exact
-								component={Dashboard}
+								component={Dashboard1}
 							/>
 							<Route
 								path="/leaderboard1"
