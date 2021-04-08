@@ -2,9 +2,9 @@ import React, { Component } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css';
 import { Image, Container, Row, Col, Form, Button, Carousel, Card } from 'react-bootstrap';
 import '../styles1.css';
-import one from '../images/one.jpg'
-import two from '../images/two.jpg'
-import three from '../images/three.jpg'
+import one from '../images/course1.jpg'
+import two from '../images/course2.jpg'
+import three from '../images/course3.jpg'
 
 class Mainpage extends Component {
 
@@ -30,7 +30,7 @@ class Mainpage extends Component {
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        src={require('../images/4.jpg').default}
+                                        src={require('../images/mainpage1.jpg').default}
                                         alt="First slide"
                                         height="650" width="650"
                                     />
@@ -42,7 +42,7 @@ class Mainpage extends Component {
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"                                        
-                                        src={require('../images/5.jpg').default}
+                                        src={require('../images/mainpage2.jpg').default}
                                         alt="Second slide"
                                         height="650" width="650"
                                     />
@@ -55,7 +55,7 @@ class Mainpage extends Component {
                                 <Carousel.Item>
                                     <img
                                         className="d-block w-100"
-                                        src={require('../images/6.jpg').default}
+                                        src={require('../images/mainpage3.jpg').default}
                                         alt="Third slide"
                                         height="650" width="650"
                                     />
@@ -73,6 +73,9 @@ class Mainpage extends Component {
                     <br />
                     <br />
                     <br />
+                    <Row className="col-md-12 offset-md-4">
+                        <h2> Starter Courses</h2>
+                    </Row>
                     <Row>
                         <Col className='col-md-4'>
                             {/* <div className="col-3"> */}
@@ -174,7 +177,7 @@ class Mainpage extends Component {
                                 </ul>
                             </Col>
                             <Col className="col-md-4  mt-5">
-                                <img src={require('../images/3.jpg').default} />
+                                <img src={require('../images/form2.jpg').default} />
                             </Col>
                         </Row>
                     </Form>
