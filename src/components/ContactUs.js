@@ -1,10 +1,14 @@
-import React, { Component } from 'react'
+import React, { Component } from 'react';
+import 'bootstrap/dist/css/bootstrap.min.css';
 
 class ContactUs extends Component {
     render() {
+        const mapStyle = {
+            height:'500px',
+        }
         return (
             <div>
-                <div id="googlemaps" class="google-map mt-0" style="height: 500px;"></div>
+                <div id="googlemaps" class="google-map mt-0" style={mapStyle}></div>
 
                 <div className="container">
 
@@ -31,17 +35,17 @@ class ContactUs extends Component {
                                 <div className="form-row">
                                     <div className="form-group col-lg-6">
                                         <label className="required font-weight-bold text-dark text-2">Full Name</label>
-                                        {/* <input type="text" data-msg-required="Please enter your name." maxlength="100" className="form-control" name="name" required> */}
+                                        <input type="text" data-msg-required="Please enter your name." className="form-control" name="name" required />
                                     </div>
                                     <div className="form-group col-lg-6">
                                         <label className="required font-weight-bold text-dark text-2">Email Address</label>
-                                        {/* <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" required> */}
+                                        <input type="email" value="" data-msg-required="Please enter your email address." data-msg-email="Please enter a valid email address." maxlength="100" class="form-control" name="email" required />
                                     </div>
                                 </div>
                                 <div className="form-row">
                                     <div className="form-group col">
                                         <label className="font-weight-bold text-dark text-2">Subject</label>
-                                        {/* <input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" required> */}
+                                        <input type="text" value="" data-msg-required="Please enter the subject." maxlength="100" class="form-control" name="subject" required />
                                     </div>
                                 </div>
                                 <div className="form-row">
@@ -52,7 +56,7 @@ class ContactUs extends Component {
                                 </div>
                                 <div className="form-row">
                                     <div className="form-group col">
-                                        {/* <input type="submit" value="Send Message" className="btn btn-primary btn-modern" data-loading-text="Loading..."> */}
+                                        <input type="submit" value="Send Message" className="btn btn-primary btn-modern" data-loading-text="Loading..." />
                                     </div>
                                 </div>
                             </form>
@@ -63,22 +67,10 @@ class ContactUs extends Component {
                                 <h4 className="mt-2 mb-1">Get in touch</h4>
                                 <ul className="list list-icons list-icons-style-2 mt-2">
                                     <li><i className="fas fa-map-marker-alt top-6"></i> <strong class="text-dark">Address:</strong> Near Valetva Crossing, District Anand, Changa, Gujarat 388421</li>
-                                    <li><i className="fas fa-phone top-6"></i> <strong class="text-dark">Phone:</strong> 02697-265169</li>
-                                    <li><i className="fas fa-envelope top-6"></i> <strong class="text-dark">Email:</strong> <a href="mailto:mail@example.com"> pramodpatel.lib@charusat.ac.in</a></li>
+                                    <li><i className="fas fa-phone top-6"></i> <strong class="text-dark">Phone:</strong> 7016552650</li>
+                                    <li><i className="fas fa-envelope top-6"></i> <strong class="text-dark">Email:</strong> <a href="mailto:mail@example.com"> 18it022@charusat.edu.in</a></li>
                                 </ul>
-                            </div>
-
-                            <div className="appear-animation" data-appear-animation="fadeIn" data-appear-animation-delay="950">
-                                <h4 className="pt-5">Circulation timing</h4>
-                                <ul className="list list-icons list-dark mt-2">
-                                    <li><i className="far fa-clock top-6"></i> Monday - Friday - 9am to 5pm</li>
-                                </ul>
-                            </div>
-
-                            <h4 className="pt-5">Ask A Librarian</h4>
-                            <p className="lead mb-0 text-4">
-                                <li><i className="fas fa-phone top-6"></i> <strong class="text-dark">Phone:</strong> 02697-265169</li>
-                            </p>
+                            </div>                                                    
                         </div>
                     </div>
                 </div>
