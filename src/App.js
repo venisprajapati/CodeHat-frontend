@@ -13,6 +13,7 @@ import Discussion from "./components/Discussion";
 import Faculty1 from "./components/Faculty1";
 import ProblemList from "./components/ProblemList";
 import Mainpage from './components/Mainpage';
+import ContactUs from './components/ContactUs';
 
 class App extends Component {
 	render() {
@@ -63,10 +64,16 @@ class App extends Component {
 								exact
 								component={Discussion}
 							/>
+							<Route
+								path="/contactus"
+								exact
+								component={ContactUs}
+							/>
 							<Route 
 								path="/faculty1"
 								exact
-								component={Faculty1} />
+								component={Faculty1} 
+							/>
 						</Switch>
 					</Nav>
 				</div>
